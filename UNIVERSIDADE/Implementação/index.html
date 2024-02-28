@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" type="image/ico" href="Fomul-rios-1/favicon.ico">
+    <style>
+        h4{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: darkgrey;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <h4>SISTEMA DE GESTÃO ACADÊMICA</h4>
+    <p><strong>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</strong></p>
+    <br>
+    <form action="">
+        <p><label for="ilogin">Login</label> 
+            <input type="text" name="Login" id="ilogin">
+        </p>
+        <p><label for="isenha">Senha</label>
+            <input type="text" name="Senha" id="isenha">
+        </p>
+        <p><label for="istatus">Status</label>
+            <select id="istatus" name="Status">
+                <option value="inativo">Inativo</option>
+                <option value="ativo">Ativo</option>
+            </select>
+        </p>
+        <p>
+            <label for="tipo">Tipo</label>
+            <input type="radio" id="itecnico" name="tecnico" value="Técnico">
+            <label for="tecnico">Técnico</label>
+            <input type="radio" id="iprofessor" name="professor" value="Professor">
+            <label for="professor">Professor</label>
+            <input type="radio" id="ialuno" name="aluno" value="Aluno">
+            <label for="aluno">Aluno</label>
+        </p>
+        <p><label for="idata">Data Criação</label> 
+            <input type="text" name="Data" id="idata">
+        </p>
+        <p>
+            <label for="perfil">Perfil</label>
+            <input type="radio" id="iconvidado" name="convidado" value="Convidado">
+            <label for="convidado">Convidado</label>
+            <input type="radio" id="iadm" name="adm" value="Administrador">
+            <label for="adm">Administrador</label>
+        </p>
+        <p>
+            <label for="ob">Obeservações</label>
+            <textarea type="text" name="Obeservações" id="iob" cols="50" rows="7"></textarea>
+        </p>
+        <p>
+            <label for="mod">Módulos</label>
+            <input type="checkbox" id="ic" name="c" value="C">
+            <label for="c">Compras</label>
+            <input type="checkbox" id="ib" name="b" value="B">
+            <label for="b">Biblioteca</label>
+            <input type="checkbox" id="ia" name="a" value="A">
+            <label for="a">Acadêmico</label> <br>
+            <input type="checkbox" id="id" name="d" value="D">
+            <label for="d">Documentação</label>
+            <input type="checkbox" id="ir" name="r" value="R">
+            <label for="r">Recursos Humanos</label>
+        </p>
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Excluir">
+        </p>
+    </form> 
+    
+</body>
+</html>
